@@ -19,12 +19,20 @@
                 color: orange;
                 cursor: pointer;
             }
-            .drop-down-list{
-                display: block;
-
+            nav>ul{
+                display: inline-block;
             }
-            .drop-down-list>li{
-                color: red;
+            nav>ul>li{
+                font-weight: bold;
+                box-shadow: 1px 1px black;
+            }
+            nav>ul>li>a{
+                text-decoration: none;
+            }
+            nav>ul>li:hover{
+                cursor: pointer;
+                background-color: black;
+                color: orange;
             }
         </style>
     </head>
@@ -36,21 +44,22 @@
         <nav>
             <ul>
                 <li>
-                    <li disabled="true">Skills</li>
-                    <ul class="drop-down-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <a href="" class="">Home</a>
                 </li>
                 <li>
-                    <a href="" class=""></a>
+                    <a href="" class="">Portfolio</a>
                 </li>
                 <li>
-                    <a href="" class=""></a>
+                    <a href="" class="">Resume</a>
                 </li>
                 <li>
-                    <a href="" class=""></a>
+                    <a href="" class="">Contact</a>
+                </li>
+                <li>
+                    <a href="" class="">About</a>
+                </li>
+                <li>
+                    <a href="" class="">GitHub</a>
                 </li>
             </ul>
         </nav>
