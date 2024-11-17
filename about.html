@@ -126,9 +126,25 @@
         max-height: 90vh;
         padding: 8px;
       }
+      #site_wrapper{
+        width: 50vw;
+      }
+      @media only screen and (max-width: 600px) {
+        #site_wrapper{
+            width: 100vw;
+        }
+        .navLinks{
+            font-size: 8pt;
+        }
+      } 
+      @media only screen and (min-width: 600px) {
+        #site_wrapper{
+            width: 75vw;
+        }
+      } 
     </style>
 </head>
-<div class="container text-center" style="width: 50vw;">
+<div class="container text-center" id="site_wrapper">
     <div class="lower_nav_section">
         <a href="index.html" class="navLinks_Lower">HOME&nbsp;&nbsp;</a>
         <a href="about.html#about_anchor" class="navLinks_Lower">ABOUT&nbsp;&nbsp;</a>
